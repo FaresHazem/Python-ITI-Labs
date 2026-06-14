@@ -1,16 +1,26 @@
 # 🗄️ Python Labs - ITI Course
 
-Comprehensive Python laboratory exercises covering fundamentals, data structures, object-oriented programming, testing, virtual environments, and packaging.
+Comprehensive Python laboratory exercises covering fundamentals, data structures, object-oriented programming, testing, web development (Django), and packaging.
 
 ## 📚 Lab Modules
 
-| Lab       | Topics                                                               | Focus |
-| --------- | -------------------------------------------------------------------- | ----- |
-| **Lab 1** | Python basics, data types, control flow, I/O — Fundamentals & Syntax |
+| Lab               | Topics                                                                | Focus                                                  |
+| ----------------- | --------------------------------------------------------------------- | ------------------------------------------------------ |
+| **Django-Lab-01** | Django project structure, models, views, templates, CRUD (books app)  | Web development with Django (models, templates, forms) |
+| **Lab-01**        | Python basics, data types, control flow, I/O — multiple small scripts | Fundamentals & syntax, practice exercises              |
+| **Lab-02**        | Functions, collections, basic algorithms                              | Core programming patterns and problem-solving          |
+| **Lab-05**        | Object-oriented programming, modules, simple persistence              | OOP design, modules, basic DB/file usage               |
+
+## 📁 Repository Highlights
+
+- Django app with a `books` app and simple CRUD views and templates.
+- Lab scripts under `Lab-01/`, `Lab-02/`, and `Lab-05/` demonstrating increasing complexity from basics to OOP.
 
 ## 🚀 Quick Start
 
-```bash
+Run Python scripts from the workspace root. Example (Windows):
+
+```powershell
 # Check Python version
 python --version
 
@@ -18,8 +28,22 @@ python --version
 python -m venv venv
 venv\Scripts\activate
 
-# Run a Python script
-python lab_script.py
+# Run a lab script, e.g. Lab-01 exercises
+python Lab-01/lab-01-01.py
+```
+
+## 🧰 Django Lab (quick)
+
+To run the Django project locally:
+
+```powershell
+cd Django-Lab-01
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+# Open http://127.0.0.1:8000/ in your browser
 ```
 
 ## ✨ Requirements
@@ -27,7 +51,6 @@ python lab_script.py
 - Python 3.8+
 - pip
 - virtualenv or venv
-- Basic programming knowledge
 
 ## 👤 Author
 
